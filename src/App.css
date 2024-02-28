@@ -1,0 +1,70 @@
+@font-face {
+    font-family: chacha;
+    src: url("./components/fonts/NeueMontreal-Regular.ttf")
+}
+
+@font-face {
+    font-family: founder;
+    src: url("./components/fonts/FoundersGrotesk-Semibold.ttf2.ttf")
+}
+
+.links {
+    font-family: "chacha";
+}
+
+.masker {
+    font-family: "founder";
+}
+
+.text {
+    font-family: "founder";
+}
+
+.text-name {
+    font-family: "chacha";
+}
+
+.featured {
+    font-family: "chacha";
+}
+
+
+
+.text-button {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.text-button:hover {
+    color: white;
+}
+
+.Founder {
+    font-family: "Founder";
+}
+
+.dets {
+    font-family: "chacha";
+}
+
+button:after {
+    content: "";
+    background:blue;
+    /* color: white; */
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
